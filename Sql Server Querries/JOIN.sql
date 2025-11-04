@@ -23,3 +23,20 @@ ON d.deptno = e.deptno;
 select e.ename, d.dname
 from emp e FULL OUTER  join dept d
 ON d.deptno = e.deptno;
+
+
+select * from emp ;
+
+select e.ename as 'Employee', m.ename as 'Manager'
+from emp e  join emp m
+on e.mgr = m.empno
+
+
+SELECT e.ename, d.dname
+FROM emp e
+INNER JOIN dept d
+ON e.deptno = d.deptno;
+
+
+select * 
+from emp e cross join dept d 
